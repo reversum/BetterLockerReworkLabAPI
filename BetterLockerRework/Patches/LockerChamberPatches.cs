@@ -14,7 +14,9 @@ public static class LockerFillChamberPatch
 		bool blockVanilla = cfg.DisableBaseGameItems.TryGetValue(__instance.StructureType, out bool destroy) && destroy;
 
 		if (!blockVanilla)
+		{
 			return true;
+		}
 
 		if (cfg.LockerSpawns.TryGetValue(__instance.StructureType, out var spawnerList) && spawnerList.Count > 0)
 		{
@@ -55,6 +57,6 @@ public static class LockerFillChamberPatch
 			return false;
 		}
 
-		return false;
+		return true;
 	}
 }

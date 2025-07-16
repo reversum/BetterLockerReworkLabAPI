@@ -21,13 +21,14 @@ namespace BetterLockers
 		public Config Config { get; private set; }
 		public override void Enable()
 		{
-			_harmony = new Harmony("lockerrework.yannik");
+			LoadConfigs();
+			_harmony = new Harmony("lockerreworklabapi.yannik");
 			_harmony.PatchAll();
 		}
 
 		public override void Disable()
 		{
-			_harmony.UnpatchAll("lockerrework.yannik");
+			_harmony.UnpatchAll("lockerreworklabapi.yannik");
 		}
 
 		public override void LoadConfigs()
