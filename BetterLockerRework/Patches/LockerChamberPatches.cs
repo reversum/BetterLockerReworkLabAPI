@@ -11,6 +11,11 @@ public static class LockerFillChamberPatch
 	{
 		var cfg = Main.Instance.Config;
 
+		if (!cfg.IsEnabled)
+		{
+			return true;
+		}
+
 		bool blockVanilla = cfg.DisableBaseGameItems.TryGetValue(__instance.StructureType, out bool destroy) && destroy;
 
 		if (!blockVanilla)
