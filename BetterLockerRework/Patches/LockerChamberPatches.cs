@@ -22,7 +22,6 @@ public static class LockerFillChamberPatch
 		if (cfg.LockerSpawns.TryGetValue(__instance.StructureType, out var spawnerList) && spawnerList.Count > 0)
 		{
 			var shuffledList = spawnerList.OrderBy(_ => UnityEngine.Random.value).ToList();
-
 			var uciAssembly = AppDomain.CurrentDomain.GetAssemblies()
 				.FirstOrDefault(a => a.GetName().Name.Contains("UncomplicatedCustomItems"));
 

@@ -36,7 +36,7 @@ namespace BetterLockers
 				{
 					item = "KeycardGuard",
 					amount = 1,
-					chance = 20,
+					chance = 100,
 					maxamountinlocker = 1,
 					uciitem = false,
 				}
