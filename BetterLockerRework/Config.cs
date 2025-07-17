@@ -26,37 +26,41 @@ namespace BetterLockers
 			{
 				new Spawner
 				{
-					item = ItemType.GunCOM15,
+					item = "GunCOM15",
 					amount = 1,
 					chance = 20,
 					maxamountinlocker = 1,
+					uciitem = false,
 				},
 				new Spawner
 				{
-					item = ItemType.KeycardGuard,
+					item = "KeycardGuard",
 					amount = 1,
 					chance = 20,
 					maxamountinlocker = 1,
+					uciitem = false,
 				}
 			},
 			[StructureType.LargeGunLocker] = new List<Spawner>
 			{
 				new Spawner
 				{
-					item = ItemType.MicroHID,
+					item = "MicroHID",
 					amount = 1,
 					chance = 1,
 					maxamountinlocker = 1,
+					uciitem = false,
 				}
 			},
 			[StructureType.ExperimentalWeaponLocker] = new List<Spawner>
 			{
 				new Spawner
 				{
-					item = ItemType.MicroHID,
+					item = "MicroHID",
 					amount = 1,
 					chance = 100,
 					maxamountinlocker = 1,
+					uciitem = false,
 				}
 			}
 		};

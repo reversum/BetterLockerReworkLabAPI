@@ -8,9 +8,10 @@ namespace BetterLockers
 {
 	public class Spawner
 	{
-		public ItemType item { get; set; }
+		public string item { get; set; }
 		public int chance { get; set; }
 		public int amount { get; set; }
 		public int maxamountinlocker { get; set; }
+		public bool uciitem { get; set; } = false;
 	}
 }
