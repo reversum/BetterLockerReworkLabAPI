@@ -15,6 +15,7 @@ locker_spawns:
     chance: 100
     amount: 1
     maxamountinlocker: 1
+    uciitem: false
   - item: KeycardGuard
     chance: 100
     amount: 1
@@ -24,11 +25,13 @@ locker_spawns:
     chance: 1
     amount: 1
     maxamountinlocker: 1
+    uciitem: false
   ExperimentalWeaponLocker:
   - item: MicroHID
     chance: 100
     amount: 1
     maxamountinlocker: 1
+    uciitem: false
 ```
 
 Original Plugin: https://github.com/BruteForceMaestro/BetterLockers
